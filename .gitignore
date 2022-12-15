@@ -15,3 +15,6 @@ data/dst/opencv_mosaic_area.jpg
 data/dst/opencv_mosaic_01.jpg
 data/dst/opencv_mosaic_005.jpg
 .DS_Store
+module/opencv_mosaic.py
+opencv_mosaic.py
+opencv_mosaic.py
