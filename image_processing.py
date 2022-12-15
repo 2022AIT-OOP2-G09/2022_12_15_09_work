@@ -1,5 +1,20 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import cv2
+import numpy as np
 import os
+
+
+class Cannyscale():
+    def __init__(self):
+        path = './input_image'
+        inputlist = os.listdir(path)
+
+    def convert_list(self):
+        for i in inputlist:
+            img = cv2.imread(f'./input_image/{i}',0)
+            edges = cv2.Canny(img,100,200)
+            cv2.imwrite(f'./output_cannyfilter_image/{i}',edges)
 
 class GrayScale():
     def __init__(self):
@@ -15,4 +30,7 @@ class GrayScale():
         
 if __name__ == "__main__":
     app = GrayScale()
+    app = Cannyscale()
     app.convert()
+    app.convert_list()
+
