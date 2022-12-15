@@ -5,16 +5,15 @@ import numpy as np
 import os
 
 
-class Cannyscale():
+class Cannyclass():
     def __init__(self):
-        path = './input_image'
-        inputlist = os.listdir(path)
+        self.path = os.listdir('./input_image')
 
-    def convert_list(self):
-        for i in inputlist:
-            img = cv2.imread(f'./input_image/{i}',0)
+    def convert_canny(self):
+        for each_path in self.path:
+            img = cv2.imread(f'./input_image/{each_path}',0)
             edges = cv2.Canny(img,100,200)
-            cv2.imwrite(f'./output_cannyfilter_image/{i}',edges)
+            cv2.imwrite(f'./output_cannyfilter_image/{each_path}',edges)
 
 class GrayScale():
     def __init__(self):
@@ -30,7 +29,7 @@ class GrayScale():
         
 if __name__ == "__main__":
     app = GrayScale()
-    app = Cannyscale()
     app.convert()
-    app.convert_list()
+    app = Cannyclass()
+    app.convert_canny()
 
