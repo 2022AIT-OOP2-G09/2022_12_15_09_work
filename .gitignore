@@ -20,3 +20,5 @@ opencv_mosaic.py
 face_detection_mosaic/BL004-kopwowatasu20140810_TP_V4.jpg
 face_detection_mosaic/OOK99_facebookiine20131223_TP_V4.jpg
 face_detection_mosaic/TSUCH160130520I9A6560_TP_V4.jpg
+test.py
+face_mosaic/__pycache__/faceDetection_mosaic.cpython-310.pyc
