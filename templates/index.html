@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang=”ja”>
+<head>
+<meta charset=”UTF-8″>
+</head>
+<body>
+<title>Flask練習</title>
+
+<font color="red"><h2>glayscale</h2><font></span>
+    <img src="templates/images/picture1.jpg"> #画像のデータ
+    <img src="{{ url_for('templates/images', filename='picture1.jpg') }}" alt="Rock" width="150">
+</body>
+</html>
